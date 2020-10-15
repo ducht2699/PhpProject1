@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+    <head>
+        <title>Form4Radio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <div class="register-form" align="center">
+            <form action="Form4Radio.php" method="POST">
+                
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>First Name:</td>
+                            <td> <input  type="text" size="16" maxlength="20" name="first_name" placeholder="First name..."></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name:</td>
+                            <td> <input  type="text" size="16" maxlength="20" name="last_name" placeholder="Last name..."> <br></td>
+                        </tr>
+                        <tr>
+                            <td>Email ID:</td>
+                            <td> <input  type="text" size="16" maxlength="20" name="email" placeholder="Email..."> <br></td>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td> <input  type="text" size="16" maxlength="20" name="class" placeholder="Class..."> <br></td>
+                        </tr>
+                        <tr>
+                            <td>University</td>
+                            <td> <input  type="text" size="16" maxlength="50" name="university" placeholder="University..."> <br></td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number:</td>
+                            <td> <input  type="text" size="16" maxlength="20" name="phone_number" placeholder="Phone number..."> <br></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td> <input  type="radio" name="gender" value="male"> Male 
+                                <input type="radio" name="gender" value="female"> Female
+                                <input type="radio" name="gender" value="others"> Others
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth(DOB):</td>
+                            <td> <input  type="date" name="dob" > <br></td>
+                        </tr>
+                        <tr>
+                            <td> Address:</td>
+                            <td> 
+                                <input  type="text" size="16" maxlength="20" name="address" placeholder="Address..."> <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>City:</td>
+                            <td> <input  type="text" size="16" maxlength="20" name="city" placeholder="City..."> <br></td>
+                        </tr>
+                        <tr>
+                            <td>Postal Code:</td>
+                            <td> <input  type="text" size="16" maxlength="20" name="postal_code" placeholder="100000"> <br></td>
+                        </tr>
+                        <tr>
+                            <td>State:</td>
+                            <td> <input  type="text" size="16" maxlength="20" name="state" placeholder="State..."> <br></td>
+                        </tr>
+                        <tr>
+                            <td>Hobbies:</td>
+                            <td> 
+                                <input  type="checkbox" name="hobbies[]" value="Drawing"> Drawing
+                                <input  type="checkbox" name="hobbies[]" value="Singing"> Singing
+                                <input  type="checkbox" name="hobbies[]" value="Dancing"> Dancing
+                                <input  type="checkbox" name="hobbies[]" value="Sketching"> Sketching <br>
+                                Others: <textarea  maxlength="50"  name="hobbies_text" placeholder="Your hobbies..."></textarea>  (Max 50 chars allowed)
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Qualification:</td>
+                            <td>
+                                <input  type="radio" name="qualification" value="High School" > High School <br>
+                                <input  type="radio" name="qualification" value="Higher School"> Higher School <br>
+                                <input  type="radio" name="qualification" value="Graduation"> Graduation <br>
+                                <input  type="radio" name="qualification" value="Post Graduation"> Post Graduation <br>
+                                <input  type="radio" name="qualification" value="Phd"> Phd
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="button">
+                                <input  type="submit" value="Submit">
+                                <input  type="reset" value="Restart">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </body>
+
+</html>
